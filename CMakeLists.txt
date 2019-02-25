@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.1)
 project(cmake_wrapper)
 
 message(STATUS "Conan CMake Wrapper")
