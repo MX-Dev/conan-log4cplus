@@ -7,7 +7,7 @@ from conans.errors import ConanInvalidConfiguration
 
 class Log4cplusConan(ConanFile):
     name = "log4cplus"
-    version = "2.0.2"
+    version = "2.0.3"
     description = "simple to use C++ logging API, modelled after the Java log4j API"
     url = "https://github.com/pFiTz123/conan-log4cplus"
     homepage = "https://github.com/log4cplus/log4cplus"
@@ -58,7 +58,7 @@ class Log4cplusConan(ConanFile):
 
     def source(self):
         archive_name = self.name + "-" + self.version
-        sha256 = "10539f2315271d370c7bc6a2b4808cbe369279837f4539ce5c789e456489fc62"
+        sha256 = "2d8f627aa6417e6c6a100bc09dc407684ca4605c929defc1690ee7d6a575ce6a"
         tools.get("{}/releases/download/REL_{}/{}.tar.gz".format(
                   self.homepage, self.version.replace(".", "_"), archive_name), sha256=sha256)
         os.rename(archive_name, self._source_subfolder)
